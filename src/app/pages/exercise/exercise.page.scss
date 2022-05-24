@@ -1,0 +1,42 @@
+ion-content{
+    --background:#F9E4C8;
+}
+h1
+{
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 230%;
+}
+h2{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+.text{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    --background:#E2C275;
+    --color:black;
+}
+// ion-button:hover{background-color:grey;}
+ion-card{
+    --background:transparent;
+}
+.back{
+    margin-top: 10px;
+    margin-left: 140px;
+    --background:#CEE5D0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    --color:black;
+}
+.img1{
+    // margin-left: 5px;
+    width: 60px;
+    height: 70px;
+}

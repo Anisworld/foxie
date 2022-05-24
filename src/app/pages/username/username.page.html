@@ -1,0 +1,18 @@
+<ion-content>
+  <div class="Simage">
+    <img src="https://i.postimg.cc/RCXHQ2pK/logo-apps-2.png"/>
+  </div>
+<h1>Hey! I'm Foxie</h1>
+<h2>What would you like me to call you?</h2>
+<div class="ion-padding">
+  <form [formGroup]="form">
+    <ion-item>
+      <ion-label position="floating">Nickname</ion-label>
+      <ion-input type="text" placeholder="Choose nickname" formControlName="username"></ion-input>
+    </ion-item>
+    <ion-label color="danger" *ngIf="form.get('username').touched && form.get('username').errors?.required">Username is invalid</ion-label>
+    <ion-button [disabled]="!form.valid" (click)="btnCliked()"><ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+  </form>
+</div>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "foxie-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

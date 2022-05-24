@@ -1,0 +1,21 @@
+.flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 50px;
+    font-family: 'Times New Roman', serif;
+
+}
+.Fimage{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75%;
+    margin-left: 110px;
+    width:180px; 
+    height:190px;
+}
+ion-content{
+    --background:#F9E4C8;
+}

@@ -1,0 +1,87 @@
+ion-content{
+    --background:#F9E4C8;
+}
+.Fimage{
+    justify-content: left;
+    align-items: left;
+    margin-left: 20px;
+    width: 20px; 
+}
+.flex-right{
+    display:flex;
+    justify-content: right;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.labelName{
+    margin-top: 40px;
+    margin-left: 40px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+ion-card, ion-item{
+    --background:#F9E4C8;
+}
+h2{
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.btnissue{
+    --background: #EBC088;
+}
+ion-tab-bar{
+    --background:transparent;
+}
+ion-icon{
+    color:black;
+    margin-left: 20px;
+    font-size: 30px;
+
+}
+ion-toolbar{
+    margin-top: 90px;
+    --background:#EBC088;
+}
+ion-label{
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.style{
+    margin-left: 10px;
+}
+ion-img{
+    width:100px;
+    height:100px;
+}
+// .style{
+//     margin-left: 20px;
+// }
+.column{
+    float: left;
+    width: 120px;
+    padding: 10px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+.Mcolumn{
+    float: left;
+    width: 120px;
+    padding: 10px;
+    margin-left: 5px;
+}
+.button{
+    --background:#C8C6A7;
+    --color:black;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
+}
+.menubtn{
+    --background: transparent;
+    margin-right: 10px;
+}

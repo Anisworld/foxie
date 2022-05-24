@@ -1,0 +1,49 @@
+<ion-content>
+<div>
+  <br>
+  <ion-button (click)="iconCliked()" class="backbtn"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+</div>
+  <!-- the image is from database -->
+  <img class="img1" src="https://i.postimg.cc/zf5v1mYh/seated-Twist.png"/> 
+  <!-- description -->
+  <p>Seated Twist</p>
+  <p class="p1">you need to do in 30 seconds</p>
+  <p>get ready! GO!</p>
+
+  <!-- timer  -->
+  <br>
+  <svg 
+  id="progress-circle"
+  width="20vh"
+  height="20vh"
+  viewBox="0 0 200 200">
+
+  <linearGradient id="linearColors1" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ddd6f3"></stop>
+    <stop offset="100%" stop-color="#faaca8"></stop>
+  </linearGradient>
+  <circle 
+    cx="50%"
+    cy="50%"
+    [attr.r]="circleR"
+    fill="none"
+    stroke="#f3f3f3"
+    stroke-width="12" 
+  />
+  <circle
+    cx="50%"
+    cy="50%"
+    [attr.r]="circleR"
+    fill="none"
+    stroke="url(#linearColors1)"
+    stroke-width="12"
+    stroke-lincape="round"
+    [attr.stroke-dasharray]="circleDasharray"
+    [attr.stroke.dashoffset]="percentageOffset(percent | async)"
+  />
+  <text x="50%" y="55%" class="timer-text">{{ time | async }}</text>
+  </svg>
+
+  <ion-button class="starbtn" *ngIf="state === 'stop'"  (click)="startTimer(startDuration)">Start</ion-button>
+  <ion-button class="starbtn" *ngIf="state === 'start'"  (click)="stopTimer()">Stop</ion-button>
+</ion-content>
